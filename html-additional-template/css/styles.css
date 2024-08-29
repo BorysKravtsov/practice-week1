@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none; /* Убираем подчеркивание */
+  color: inherit; /* Устанавливаем цвет текста, наследуемый от родителя */
+  font-weight: normal; /* Убираем жирность текста, если установлена */
+  font-size: inherit; /* Устанавливаем размер текста, наследуемый от родителя */
+  font-style: normal; /* Убираем наклонный текст (курсив), если установлен */
+  background-color: transparent; /* Убираем фон, если установлен */
+  border: none; /* Убираем границу */
+  padding: 0; /* Убираем отступы */
+  margin: 0; /* Убираем внешние отступы */
+  outline: none; /* Убираем контур при фокусировке */
+  display: inline; /* Устанавливаем базовое поведение для ссылок */
+  cursor: pointer;
+  transition: 0.3s; /* Устанавливаем курсор, наследуемый от родителя */
+}
+
+a:hover {
+  color: #da3b3b;
+  background-color: white;
+}
+
+body {
+  font-family: monospace;
+  color: white;
+  background-color: #181711;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.header__welcome {
+  text-align: right;
+  margin-right: 13px;
+}
+
+h1 {
+  font-size: 75px;
+  line-height: 0;
+}
+
+span {
+  color: #da3b3b;
+}
+
+a {
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+nav {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
