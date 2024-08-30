@@ -21,6 +21,8 @@ a {
 a:hover {
   color: #da3b3b;
   background-color: white;
+  padding: 10px 50px;
+  letter-spacing: 1px;
 }
 
 body {
@@ -29,12 +31,33 @@ body {
   background-color: #181711;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
 .header__inner {
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin: auto;
   min-height: 100vh;
+}
+
+.header__info-container {
+  position: relative;
+  padding-left: 30px;
+}
+h2::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 10px;
+  left: 0;
+  background-color: #da3b3b;
+  box-shadow: 1px 1px 40px #ff0000;
+  border-radius: 10px;
 }
 
 .header__welcome {
@@ -53,7 +76,7 @@ span {
 
 a {
   font-size: 20px;
-  padding: 0 10px;
+  padding: 10px 20px;
 }
 
 nav {
@@ -61,4 +84,34 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.photo {
+  background-image: url(https://media.licdn.com/dms/image/v2/D4E03AQE5KmBXgPQ7EA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720536920301?e=1730332800&v=beta&t=RK-dR2ZvsjpsoXREMFJmL5m8y7L6GfIdDtp-0BvK9nQ);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 175px;
+  height: 350px;
+  width: 350px;
+  box-shadow: 1px 1px 1500px #da3b3b;
+  border: 2px solid rgb(255, 2, 2);
+  animation: scale-shadow 10s ease-in-out infinite;
+}
+
+@keyframes scale-shadow {
+  0% {
+    box-shadow: 1px 1px 150px #ff0000;
+  }
+  50% {
+    box-shadow: 1px 1px 1500px #3b85da;
+  }
+  100% {
+    box-shadow: 1px 1px 150px #ff0000;
+  }
+}
+
+h2 {
+  text-align: left;
+
+  font-size: 35px;
 }
