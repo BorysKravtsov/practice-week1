@@ -49,7 +49,7 @@ body {
   position: relative;
   padding-left: 30px;
 }
-h2::before {
+/* h2::before {
   position: absolute;
   content: "";
   width: 5px;
@@ -58,7 +58,7 @@ h2::before {
   background-color: #da3b3b;
   box-shadow: 1px 1px 40px #ff0000;
   border-radius: 10px;
-}
+} */
 
 .header__welcome {
   text-align: right;
@@ -111,7 +111,32 @@ nav {
 }
 
 h2 {
-  text-align: left;
-
+  text-align: center;
+  margin-bottom: 100px;
   font-size: 35px;
+}
+
+.partners {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.partners__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 18px;
+}
+
+.partners__logo {
+  width: 50px;
+  filter: saturate(0) brightness(1000);
+}
+.dell-logo {
+  height: 50px;
+  width: auto;
 }
